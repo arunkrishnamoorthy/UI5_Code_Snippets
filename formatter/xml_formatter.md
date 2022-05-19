@@ -37,6 +37,14 @@ SS - Seconds
 
 ## Currency Formatter
 
+showMeasure property of the formatOptions needs to be set. 
+
+```xml
+<Text text="{ parts: [{ path: 'amount' },{ path: 'currency'}], 
+            type: 'sap.ui.model.type.Currency',
+            formatOptions: { showMeasure: false }}"></Text> 
+```
+
 ## Delete Leading Zeros 
 
 ## Convert the Data to Float 
