@@ -19,6 +19,20 @@ Type of the attribue needs to be date.
 ```
 ## Time Formatter 
 
+Use the pattern to format the time. 
+yyyy - Year
+MM - Month 
+dd - Time 
+HH - Hours 
+MM - Minutes
+SS - Seconds
+
+```xml
+<ObjectAttribute title="Attribute Name" 
+                 text="{ path: 'attribute', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd HH:MM:SS' } }"/> 
+```
+
+
 ## Currency Formatter
 
 ## Delete Leading Zeros 
