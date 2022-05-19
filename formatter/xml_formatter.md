@@ -60,8 +60,13 @@ Use isDigitSequence of Constraints to delete padding zeros.
 }"/> 
 ```
 
-## Convert the Data to Float 
-
 ## UTC: true 
 The UTC property of the Date control needs to be set to avoid error where OData receives the date one day less selected from the UI. 
+
+```
+<DatePicker value="{path: 'attribute', 
+            type: 'sap.ui.model.type.Date', 
+            formatOptions: {pattern: 'MM/dd/yyyy', strictParsing: true , UTC: true}}">
+</DatePicker>
+```
 
