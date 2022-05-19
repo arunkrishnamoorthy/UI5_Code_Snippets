@@ -37,7 +37,7 @@ SS - Seconds
 
 ## Currency Formatter
 
-showMeasure property of the formatOptions needs to be set. 
+showMeasure property of the formatOptions needs to be set and type of property needs to be set to Currency.
 
 ```xml
 <Text text="{ parts: [{ path: 'amount' },{ path: 'currency'}], 
@@ -46,6 +46,19 @@ showMeasure property of the formatOptions needs to be set.
 ```
 
 ## Delete Leading Zeros 
+
+Use isDigitSequence of Constraints to delete padding zeros. 
+
+```xml
+<Text text="{ 
+    path : 'attribute',  
+    type : 'sap.ui.model.odata.type.String',  
+    constraints: {  
+         isDigitSequence : true, 
+         maxLength : 10 
+    } 
+}"/> 
+```
 
 ## Convert the Data to Float 
 
