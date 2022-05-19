@@ -10,13 +10,13 @@ The Javascript conditional operator is used as the expression binding.
 if the condition is true, the true statement after the question marks gets executed. 
 if the condition is false, the false statement after the colon gets executed. 
 
-Formatting data based on true or false value. 
+Expression check based on true or false value. 
 
 ```xml
 <Text text="Hello world!" visible="{= ${bindingAttribute} ? false : true }"></Text>
 ```
 
-Formatting data based on simple value check. 
+Expression check based on simple value check. 
 ```xml
 <ObjectListItem
             title="{invoice>Quantity} x {invoice>ProductName}"
