@@ -15,7 +15,8 @@ Pattern of format options needs to be set to format the date in specified format
 Type of the attribue needs to be date. 
 
 ```xml
-<ObjectAttribute title="Attribue Name" text="{ path: 'attribute', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd' } }"/> 
+<ObjectAttribute title="Attribue Name" text="{ path: 'attribute', type: 'sap.ui.model.type.Date', 
+                                             formatOptions: { pattern: 'yyyy/MM/dd' } }"/> 
 ```
 ## Time Formatter 
 
@@ -29,7 +30,8 @@ SS - Seconds
 
 ```xml
 <ObjectAttribute title="Attribute Name" 
-                 text="{ path: 'attribute', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'yyyy/MM/dd HH:MM:SS' } }"/> 
+                 text="{ path: 'attribute', type: 'sap.ui.model.type.Date',
+                       formatOptions: { pattern: 'yyyy/MM/dd HH:MM:SS' } }"/> 
 ```
 
 
