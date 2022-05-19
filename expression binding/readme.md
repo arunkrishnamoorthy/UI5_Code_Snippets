@@ -7,8 +7,8 @@ The Javascript conditional operator is used as the expression binding.
 ```javascript
   (condition) ? true : false;
 ```
-if the condition is true, the true statement after the question marks gets executed. 
-if the condition is false, the false statement after the colon gets executed. 
+if the condition is true, the true statement after the question marks gets executed. <br/>
+if the condition is false, the false statement after the colon gets executed. <br/>
 
 Expression check based on true or false value. 
 
