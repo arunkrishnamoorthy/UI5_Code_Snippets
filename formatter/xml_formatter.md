@@ -70,3 +70,40 @@ The UTC property of the Date control needs to be set to avoid error where OData 
 </DatePicker>
 ```
 
+
+path: '/age', 
+                                    type: 'Integer',
+                                    formatOptions: {
+                                        minIntegerDigits: 3
+                                    }
+
+
+<Text text="{/dob}
+                                    path: '/dob', 
+                                    type: 'sap.ui.model.type.Date', 
+                                    formatOptions: {
+                                        style: 'full',
+                                        source: {
+                                            pattern: 'yyyy-MM-dd'
+                                        }
+                                    } 
+                                }" />
+
+
+
+<f:FormElement label="Amount">
+                            <f:fields>
+                                <Input
+                                    description="{/currency}"
+                                     value="{
+                                    parts: ['/amount', '/currency'],
+                                    type: 'sap.ui.model.type.Currency',
+                                    formatOptions: { showMeasure: false }
+                                }" />
+                            </f:fields>
+                        </f:FormElement>
+
+
+
+
+
